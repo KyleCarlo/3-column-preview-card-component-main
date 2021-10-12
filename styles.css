@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html {
+    width: 100%;
+    font-size: 15px;
+    margin: 100px;
+}
+
+img {
+    margin-right: 140px;
+}
+
+body {
+    width: 1440px;
+    text-align: center;
+}
+
+section {
+    height: 430px;
+    width: 200px;
+    padding: 2%;
+    color: hsl(0, 0%, 95%);
+    margin-inline: -2px;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2em;
+    text-align: left;
+    margin: 15% 0 35% 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* button */
+.button {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    padding: 6% 10%;
+    border-radius: 20px;
+    margin-right: 75px;
+}
+
+.sedan .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .button {
+   color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 22px;
+    margin-right: 73px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+
+    section {
+        display: block;
+        padding: 6%;
+        margin: 0 auto;
+    }
+    
+    .sedan {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+}
+
+/* attribution */
+
+.attribution {
+    color: black;
+    text-align: center;
+}
